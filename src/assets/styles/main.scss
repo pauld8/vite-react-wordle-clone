@@ -1,0 +1,23 @@
+$breakpoints: (
+  'phone': 320px,
+  'tablet': 768px,
+  'desktop': 1024px,
+) !default;
+
+@import '_include-media.scss';
+@import 'header.scss';
+@import 'board.scss';
+@import 'row.scss';
+@import 'tile.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5587ca;
+  color: #fff;
+  font-size: 22px;
+}

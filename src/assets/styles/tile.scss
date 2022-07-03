@@ -1,0 +1,33 @@
+.column.tile {
+  background-color: transparent;
+  width: 70px !important;
+  height: 70px !important;
+  padding: 0 !important;
+  border: 3px solid #ddd;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 35px;
+  font-weight: bold;
+
+  @include media('<=desktop') {
+    font-size: 30px;
+    width: 65px !important;
+    height: 65px !important;
+  }
+
+  &.correct {
+    background-color: #538d4e;
+    border: 3px solid #538d4e;
+  }
+
+  &.exists {
+    background-color: #b59f3b;
+    border: 3px solid #b59f3b;
+  }
+
+  &.incorrect {
+    background-color: #3a3a3c;
+    border: 3px solid #3a3a3c;
+  }
+}
